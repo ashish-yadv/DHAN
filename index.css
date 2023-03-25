@@ -27,6 +27,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 #nav-bar {
@@ -118,15 +119,14 @@ body {
 
 #investments #investments-options:before {
     position: absolute;
-    top: -52px;
-    left: 30%;
+    top: -20px;
+    left: 36%;
     content: "";
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 21px solid var(--white);
-    margin: 2rem;
 }
 
 #investments #investments-options #investments-options-contents {
@@ -138,6 +138,7 @@ body {
 }
 
 #investments #investments-options #investments-options-contents li {
+    font-size: 14px;
     box-sizing: border-box;
     padding: 0.3rem 1rem;
     border-radius: 3px;
@@ -147,7 +148,6 @@ body {
     cursor: pointer;
     background-color: var(--dark-transparent2);
     box-sizing: border-box;
-    padding: 0.3rem 1rem;
 }
 
 #investments:hover #investments-options {
@@ -167,21 +167,20 @@ body {
     background-color: var(--white);
     border-radius: 6px;
     box-sizing: border-box;
-    padding: 1.8rem 2.1rem;
+    padding: 1.5rem 2.1rem;
     display: none;
 }
 
 #products #products-options:before {
     position: absolute;
-    top: -52px;
-    left: 24%;
+    top: -20px;
+    left: 210px;
     content: "";
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 21px solid var(--white);
-    margin: 2rem;
 }
 
 #products #products-options #products-options-contents {
@@ -193,16 +192,20 @@ body {
 }
 
 #products #products-options #products-options-contents li {
+    font-size: 14px;
     box-sizing: border-box;
     padding: 0.3rem 1rem;
     border-radius: 3px;
+}
+
+#products #products-options #products-options-contents li:nth-child(9) {
+    grid-column: 1 / -1;
 }
 
 #products #products-options #products-options-contents li:hover {
     cursor: pointer;
     background-color: var(--dark-transparent2);
     box-sizing: border-box;
-    padding: 0.3rem 1rem;
 }
 
 #products:hover #products-options {
@@ -254,3 +257,6 @@ body {
     background: linear-gradient(to top, var(--indigo), #873cff);
 }
 
+
+
+/* Hero Section */
